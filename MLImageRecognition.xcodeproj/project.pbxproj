@@ -13,6 +13,7 @@
 		A60F7BE6298E6D5B00DE4538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60F7BE4298E6D5B00DE4538 /* Main.storyboard */; };
 		A60F7BE8298E6D5C00DE4538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60F7BE7298E6D5C00DE4538 /* Assets.xcassets */; };
 		A60F7BEB298E6D5C00DE4538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60F7BE9298E6D5C00DE4538 /* LaunchScreen.storyboard */; };
+		A6F0FF96298EBB3A00CC7F06 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A6F0FF95298EBB3A00CC7F06 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A60F7BE7298E6D5C00DE4538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60F7BEA298E6D5C00DE4538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60F7BEC298E6D5C00DE4538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F0FF95298EBB3A00CC7F06 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A60F7BDD298E6D5B00DE4538 /* MLImageRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				A6F0FF94298EBB0500CC7F06 /* MLModel */,
 				A60F7BDE298E6D5B00DE4538 /* AppDelegate.swift */,
 				A60F7BE0298E6D5B00DE4538 /* SceneDelegate.swift */,
 				A60F7BE2298E6D5B00DE4538 /* CameraController.swift */,
@@ -65,6 +68,14 @@
 				A60F7BEC298E6D5C00DE4538 /* Info.plist */,
 			);
 			path = MLImageRecognition;
+			sourceTree = "<group>";
+		};
+		A6F0FF94298EBB0500CC7F06 /* MLModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6F0FF95298EBB3A00CC7F06 /* MobileNetV2.mlmodel */,
+			);
+			path = MLModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				A60F7BE3298E6D5B00DE4538 /* CameraController.swift in Sources */,
 				A60F7BDF298E6D5B00DE4538 /* AppDelegate.swift in Sources */,
+				A6F0FF96298EBB3A00CC7F06 /* MobileNetV2.mlmodel in Sources */,
 				A60F7BE1298E6D5B00DE4538 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

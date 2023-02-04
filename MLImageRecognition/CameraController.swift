@@ -65,6 +65,11 @@ private extension CameraController {
             
             /// Set the input device on the capture session
             captureSession.addInput(input)
+            
+            let videoDataOutput = AVCaptureVideoDataOutput()
+            videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "imageRecognition.qeueu"))
+            videoDataOutput.alwaysDiscardsLateVideoFrames = true
+            captureSession.addOutput(videoDataOutput)
         }
         catch {
             /// If any error occurs, simply print it out and don't continuie any more.
@@ -100,3 +105,7 @@ private extension CameraController {
     }
 }
 
+// MARK: - AVCaptureVideoDataOutputSampleBufferDelegate
+extension CameraController: AVCaptureVideoDataOutputSampleBufferDelegate {
+    
+}
